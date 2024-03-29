@@ -5,20 +5,22 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Calculator</title>
 	<link rel="stylesheet" type="text/css" href="css/cal.css">
+	
 </head>
 <body bgcolor="skyblue" >
 	<div class="cal">
 		<form >
 			<div>
-				<input type="text" name="op" value="" class="inptext" >
+				<input type="text" name="op" id="" class="inptext" >
 			</div>
 			<div>
 				<!-- all clear the input number in the textfield  -->
 				<input type="button" name="AC" value="AC" class="op" id="allcl" onclick="op.value =''">
 
 				<!-- clear single number from the text field -->   
-				<input type="button" name="C" value="C" class="op" onclick="op.value = ac(op.value)">
-
+				<!-- <input type="button" name="C" value="c" class="op" onclick="op.value = c(op.value)"> -->
+				 <input type="button" name="C" value="C" class="op" onclick="op.value = c(op.value)">
+				 
 				<input type="button" name="%" value="%" class="op" onclick="op.value +='%'">
 			</div>
 			<div>
@@ -48,6 +50,13 @@
 		</form>
 	</div>
 	<script type="text/javascript" src="js/cal_script.js"></script>
+	<!-- <script type="text/javascript">
+		function c(ip) {
+		let b = ip.split('');
+		b.pop();
+		return b.join('');
+	}
+	</script> -->
 </body>
 
 </html>
